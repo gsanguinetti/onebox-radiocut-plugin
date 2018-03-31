@@ -12,7 +12,7 @@ module Onebox
       def to_html
         widget_url = @url.gsub('/app/','/widget/')
         widget_url = widget_url.gsub('http:','https:')
-        "<iframe width="100%" height="320px" scrolling="no" frameborder="no" src='#{widget_url}' ></iframe>"
+        "<iframe width='100%' height='320px' scrolling='no' frameborder='no' src='#{widget_url}' ></iframe>"
       rescue
         @url
       end
