@@ -1,5 +1,5 @@
-# name: Some more whitelist entries
+# name: onebox-radiocut-plugin
 # version: 0.1
-# authors: Me
+# authors: gsanguinetti
 
 Onebox::Engine::WhitelistedGenericOnebox.whitelist.push "radiocut.fm"
