@@ -9,7 +9,7 @@ module Onebox
     class OneboxRadiocutPlugin
       include Engine
       
-      matches_regexp(/^(https?:\/\/)?([\da-z\.-]+)(radiocut.fm\/)(.)+\/?$/)
+      matches_regexp(/^(https?:\/\/)(radiocut.fm\/)(.)+\/?$/)
 
       def to_html
         widget_url = @url.gsub('/app/','/widget/')
