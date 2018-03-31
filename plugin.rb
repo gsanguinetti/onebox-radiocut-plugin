@@ -2,6 +2,8 @@
 # version: 0.1
 # authors: gsanguinetti
 
+Onebox = Onebox
+
 module Onebox
   module Engine
     class OneboxRadiocutPlugin
