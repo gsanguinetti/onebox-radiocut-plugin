@@ -1,6 +1,7 @@
 # name: onebox-radiocut-plugin
 # version: 0.1
 # authors: gsanguinetti
+
 Onebox = Onebox
 module Onebox
   module Engine
@@ -12,11 +13,15 @@ module Onebox
         0
       end
   
-      matches_regexp /^https:\/\/radiocut\.fm\/audiocut/
+      matches_regexp /(https?:\/\/)(radiocut.fm\/audiocut\/)(.*?)(\/|$)/
       always_https
+      
+      def id
+        @url.match(REGEX)[2]
+      end
 
       def to_html
-        "<div>hello</div>"
+        "<iframe width='100%' height='175px' scrolling='no' frameborder='no' src='//radiocut.fm/audiocut/embed/hori/#{id}'></iframe>"
       end
     end
   end
