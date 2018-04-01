@@ -22,7 +22,7 @@ module Onebox
       end
 
       def to_html
-        "<iframe width='100%' height='175px' scrolling='no' frameborder='no' src='//radiocut.fm/audiocut/embed/hori/#{id}'></iframe>"
+        "<iframe width='100%' height='320px' scrolling='no' frameborder='no' src='//radiocut.fm/audiocut/embed/vert/#{id}'></iframe>"
       end
     end
   end
