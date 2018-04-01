@@ -13,7 +13,7 @@ module Onebox
         0
       end
   
-      matches_regexp /https?:\/\/radiocut.fm\/audiocut\/(.*?)\/|$/
+      matches_regexp /^https?:\/\/radiocut.fm\/audiocut\/(.*?)(\/|$)/
       always_https
       
       def id
