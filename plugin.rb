@@ -4,7 +4,7 @@
 Onebox = Onebox
 module Onebox
   module Engine
-    class FacebookOnebox
+    class RadiocutOnebox
       include Engine
       include StandardEmbed
       
