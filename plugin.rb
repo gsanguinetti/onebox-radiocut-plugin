@@ -18,7 +18,7 @@ module Onebox
       always_https
       
       def id
-        @url.match(REGEX)[0]
+        @url.match(REGEX)[1]
       end
 
       def to_html
