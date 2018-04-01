@@ -2,16 +2,21 @@
 # version: 0.1
 # authors: gsanguinetti
 Onebox = Onebox
-class Onebox::Engine::OneboxRadiocutPlugin
-  include Onebox::Engine
+module Onebox
+  module Engine
+    class FacebookOnebox
+      include Engine
+      include StandardEmbed
+      
+      def self.priority
+        0
+      end
   
-  def self.priority
-    0
-  end
-  
-  matches_regexp /^https:\/\/radiocut\.fm\/audiocut\/declaracion-de-clemente-cancela-sobre-la-denuncia-a-joe-fernandez/
+      matches_regexp /^https:\/\/radiocut\.fm\/audiocut/
 
-  def to_html
-    "<div>hello</div>"
+      def to_html
+        "<div>hello</div>"
+      end
+    end
   end
 end
