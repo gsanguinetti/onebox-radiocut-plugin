@@ -13,6 +13,7 @@ module Onebox
       end
   
       matches_regexp /^https:\/\/radiocut\.fm\/audiocut/
+      always_https
 
       def to_html
         "<div>hello</div>"
