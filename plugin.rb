@@ -12,8 +12,9 @@ module Onebox
       def self.priority
         0
       end
-  
-      matches_regexp /^https?:\/\/radiocut.fm\/audiocut\/(.*?)(\/|$)/
+      
+      REGEX = /^https?:\/\/radiocut.fm\/audiocut\/(.*?)(\/|$)/
+      matches_regexp REGEX
       always_https
       
       def id
